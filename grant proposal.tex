@@ -1,6 +1,6 @@
 %Written by: Aaron Stillmaker
-%September 11, 2018
-%ECE 186A - Senior Design
+%September 11, 2018\part{title}
+%ECE 186A - Senior Design\right) 
 %
 %This is a template you can use for your Project Descriptions, though you will need to change a good portion of it for your own needs.
 
@@ -10,6 +10,7 @@
 \usepackage{float}
 \usepackage{caption} 
 \usepackage{natbib}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
 \captionsetup[table]{skip=10pt}
 \title{\vspace{2in}The Smart Eraser}	%the \vspace is moving the title down from the top of the page
 \author{ECE 186A - Senior Design I \\ 			%I am jamming all of the stuff I want on the title page into the Author spot, I know, 
@@ -19,6 +20,7 @@
 	\textbf{Date:} Friday, September 28, 2018  \\ 
 	\vspace{2in}								%You may need to mess with this space, this space is above the signature lines.
 	\vspace{6pt}
+\begin{flushleft}
 	\textbf{Project Manager:} Heather Libecki			%Uncomment this section and fill in your team names and your technical advisor's name.
 	\vspace{12pt}
 	\underline{\hspace{3in}}\\					%You are welcome to have more than one technical advisor if you wish..
@@ -30,6 +32,7 @@
 	\underline{\hspace{3in}}\\
 	\textbf{Technical Advisor:} Dr. Kulhandjian
 	\underline{\hspace{3in}} \\
+	\end{flushleft}
 	\vspace{12in}}								%You will need to mess with this space, this space is after the signature lines.  The idea
 %is to make the title page by itself.  I know, this isn't elegant either, but IEEE %formatting doesn't make title pages
 
@@ -99,10 +102,10 @@
 	\setlength{\parindent}{5ex}
 	\begin{table} [H]	
 		\centering
-		\resizebox{18cm}{!}{
+		\resizebox{17cm}{!}{
 			\begin{tabular}{|c|c|c|}
 				\hline
-				\textbf{Member Assignment} & \textbf{Task} & \textbf{Description} \\
+				\textbf{Member Assign.} & \textbf{Task} & \textbf{Description} \\
 				\hline
 					All & A & Complete Smart Eraser Project Proposal to be submitted to DPS Telecom for review. \\
 				\hline
@@ -138,7 +141,7 @@
 					Research the microcontroller to be used  (DE1-SoC).\\
 				\hline
 					Chris Q. & M & 
-					Research the image processing program and what programming language to use to best suit the project{\rq}s needs.\\
+					Research the image processing program and what programming language to use.\\
 				\hline
 					Juan C. & N &
 					Research the mechanical system and the power connection it requires. \\
@@ -147,10 +150,10 @@
 	\end{table}
 		\begin{table} [H]	
 		\centering
-		\resizebox{18cm}{!}{
+		\resizebox{17cm}{!}{
 			\begin{tabular}{|c|c|c|}
 				\hline
-				\textbf{Member Assignment} & \textbf{Task} & \textbf{Description} \\
+				\textbf{Member Assign.} & \textbf{Task} & \textbf{Description} \\
 				\hline
 					All & O & Complete bi-monthly update presentation for Senior Design class.\\
 				\hline
@@ -158,7 +161,7 @@
 				\hline
 					Heather L. & Q & Test the microcontroller after researching the ports needed for the project.\\
 				\hline
-					Heather L. & R & Research the coordinate system that will be used to convert pixels in an image to movements within the mechanical system.\\
+					Heather L. & R & Research the coordinate system; converts pixels to stepper motor rotations in the mechanical system.\\
 				\hline
 					All & S & 
 					Complete bi-monthly update presentation for Senior Design class.\\
@@ -176,17 +179,40 @@
 	
 	\section{Lab and Other Resources Needed}
 	\setlength{\parindent}{5ex}	
-	
+	Besides the components listed in the budget section of this proposal, the following resources will also be needed to ensure the completion of this project: a DC power source to provide the appropriate voltage to the stepper motors, a power outlet for the DE1-SoC board, various connections and jumper cables between the power system and the Smart Eraser, and a place to store the components we will be using when they are not being utilized to ensure their safety and reliability.
 	\section{Project Team Bios}
 	\setlength{\parindent}{5ex}
-	
-	\section{Smart Eraser Description}
-	\setlength{\parindent}{5ex}
-	
+	Heather Libecki will be project manager of the Smart Eraser project. She has experience with programming the specific board (the DE1-SoC) that will be used in this project, as well as connecting physical devices to it and controlling them via the GPIO ports. This project will be dependent on translating data from the camera into information that the microcontroller will be able to process, and her previous experience with the board plus her ability to learn and adapt quickly will help in that implementation. She is adept at solving problems, debugging and error detection, and technical writing, which will be an integral part in the completion of this project. A solid understanding of the microcontroller’s full capabilities will need to be further ascertained, as well as how the coordinate system will work in conjunction with the stepper motors, which will be connected to the microcontroller.\par
+	\setlength{\parindent}{5ex}	
+	Chris Quesada has experience in working with embedded systems and developing code for different applications. This project will be heavy on the software side, involving either C or assembly language to take in data, analyze it, and then send an output. So, someone versed in both programming and interfacing with microcontrollers will be needed. A good understanding of networking will also be needed, because an ethernet connection will be used as the medium between the camera and the microcontroller. He is developing a solid knowledge based on how to interact with networks which can be applied to configuring an interface to communicate with and read data from the camera, which will be used in the creation of the image processing program, as well as the motion detection program.\par
+	\setlength{\parindent}{5ex}	
+	Juan Colin has experience in working with electrical systems, and physical circuit design. He is proficient in the use of problem solving techniques to create a functioning system with given design specifications. His part of the project will be dependent on learning the physical mechanical aspects of the design, and how the connected parts will be powered. Therefore, he will need to further his understanding of how the parts should be connected in order to ensure the most spatial efficiency, as well as the connection of the power system that will allow all parts of the system to work properly and move the way they need to. 
 	\section{Economic Analysis}
 	\setlength{\parindent}{5ex}
-	
+	SMART Boards can cost thousands of dollars, and the bigger they are the more expensive they get. Even for a small one, which is 77-inches (measured diagonally), the cost can start at \$2200. There were no specific statistics that listed the amount of whiteboards found in classrooms across the United States, but because the SMART Board is a relatively new, expensive technology, it is safe to assume that the percentage of whiteboard usage is substantially higher vs. the percentage of classrooms that have implemented the use of SMART Boards. Although the Smart Eraser is not intended to be a replacement for the SMART Board, it will bring {\lq}smart{\rq} capabilities to all whiteboards that are already in place within the classrooms across the United States, without breaking the bank.
 	\section{Advisor Recommendation}
 	\setlength{\parindent}{5ex}
-
+	The signatures below, from the students involved in the Smart Eraser project, signify their acceptance of and agreement to the following statements:
+	To invest adequate time on the project and ensure it{\rq}s timely completion.
+	To meet the project{\rq}s deadlines and stick to the schedule outlined in this document.
+	To attend future meetings on time and be present throughout their duration.
+	To generally be responsive and maintain consistent communication with their technical advisor, as well as the members of the DPS Telecom board and/or the ECE department, who are responsible for awarding this contribution.\\
+	\begin{flushleft}
+	\textbf{Project Manager:} Heather Libecki			%Uncomment this section and fill in your team names and your technical advisor's name.
+	\vspace{12pt}
+	\underline{\hspace{3in}}\\					%You are welcome to have more than one technical advisor if you wish..
+	\textbf{Team Member:} Chris Quesada
+	\vspace{12pt}
+	\underline{\hspace{3in}}\\
+	\textbf{Team Member:} Juan Colin
+	\vspace{12pt}
+	\underline{\hspace{3in}}\\
+	\end{flushleft}
+	The signature below signifies my support of this group and their project. I can attest to their commitment to the statements above, and I believe they are capable of completing this project in the way they have described throughout this document. I will be advising them throughout the duration of their project, and I will be sure to provide technical advice and assistance when necessary to aid in the success of their project.\\
+	
+	\begin{flushleft}
+	\textbf{Technical Advisor:} Dr. Kulhandjian
+	\underline{\hspace{3in}} \\
+	\vspace{12in}
+\end{flushleft}
 \end{document}
