@@ -4,9 +4,10 @@
 %
 %This is a template you can use for your Project Descriptions, though you will need to change a good portion of it for your own needs.
 
-\documentclass{IEEEtran}					%Everything is default, which is journal, 10pt font, and final draft
+\documentclass[10pt,onecolumn,draftcls]{IEEEtran} 					%Everything is default, which is journal, 10pt font, and final draft
 \usepackage{dtk-logos}						%This let me do the cool BibTeX logo, you shouldn't need this line. Add additional packages here:
 \usepackage{graphics}
+\usepackage{float}
 \usepackage{caption} 
 \usepackage{natbib}
 \captionsetup[table]{skip=10pt}
@@ -48,46 +49,46 @@
 	\setlength{\parindent}{5ex}
 	Our project would require a railing system to connect to a whiteboard, as well as a place to mount the camera to be used for image processing. With California State University, Fresno in mind specifically, each classroom already has a projector mounted on the ceiling which points toward the whiteboard at the front of the classroom. The Smart Eraser would utilize this mounted space to place the camera, and wall mounts would be used to put the track system on the board itself.
 	\setlength{\parindent}{5ex}
-	At the beginning of this project, research was done to see if there were any similar models or products that already existed which accomplish what the Smart Eraser would do. Various “automatic whiteboard eraser” projects were found, but they were focused more on the mechanical movement of the eraser, and less on the brains behind one that could detect where it needs to go in a minimal amount of time. Therefore, the Smart Eraser will be unique in its capabilities to detect not only where it needs to go on the whiteboard, but also how to get those markings erased in the shortest time possible.
+	At the beginning of this project, research was done to see if there were any similar models or products that already existed which accomplish what the Smart Eraser would do. Various “automatic whiteboard eraser” projects were found, but they were focused more on the mechanical movement of the eraser, and less on the brains behind one that could detect where it needs to go in a minimal amount of time. Therefore, the Smart Eraser will be unique in its capabilities to detect not only where it needs to go on the whiteboard, but also how to get those markings erased in the shortest time possible.\\\\\\\\\\
 	
 	\section{Budget Estimate}
 	\setlength{\parindent}{5ex}
-		\begin{table} [h!]	
+		\begin{table} [H]	
 		\centering
-		\resizebox{8cm}{!}{
+		\resizebox{17cm}{!}{
 			\begin{tabular}{|c|c|}
 				\hline
 				\textbf{Component} & \textbf{Est. Price} \\
 				\hline
-				DE1-Soc FPGA Development Board - Terasic & \$175 \\
+					DE1-Soc FPGA Development Board - Terasic & \$175 \\
 				\hline
-				CNC stepper motor driver - STEPPERONLINE & \$67.90 (\$33.95) \\
+					CNC stepper motor driver - STEPPERONLINE & \$67.90 (\$33.95) \\
 				\hline
-				Carriage with Stainless Steel Balls; for use with 115RC Linear Tack - Accuride & \$67.16 (\$33.58 x2) \\ 
+					Carriage with Stainless Steel Balls; for use with 115RC Linear Tack - Accuride & \$67.16 (\$33.58 x2) \\ 
 				\hline 		
-				115RC 47in Linear Motion Aluminum Track Systems -Accuride & \$62.68 (\$31.34 x2) \\
+					115RC 47in Linear Motion Aluminum Track Systems -Accuride & \$62.68 (\$31.34 x2) \\
 				\hline
-				Nema 23 CNC 2.8A Stepper Motor - STEPPERONLINE & \$52.00 (\$26.00) \\
+					Nema 23 CNC 2.8A Stepper Motor - STEPPERONLINE & \$52.00 (\$26.00) \\
 				\hline
-				1080p POE Camera - sv3c & \$38.99 \\
+					1080p POE Camera - sv3c & \$38.99 \\
 				\hline
-				Dry Erase Board (prototype) 36" x 24" - VIZ-PRO & \$31.90 \\
+					Dry Erase Board (prototype) 36" x 24" - VIZ-PRO & \$31.90 \\
 				\hline
-				Stepper Motor Encasing - D.Y Engineering & \$25.98 (\$12.99 X2) \\
+					Stepper Motor Encasing - D.Y Engineering & \$25.98 (\$12.99 X2) \\
 				\hline
-				5 Meter GT2 timing Belt (6mm width) - Mercury & \$17.98 (\$8.99 X2) \\
+					5 Meter GT2 timing Belt (6mm width) - Mercury & \$17.98 (\$8.99 X2) \\
 				\hline
-				6.35mm GT2 40 Teeth Pulley Flange - uxcell & \$14.38 (\$7.19 X2) \\
+					6.35mm GT2 40 Teeth Pulley Flange - uxcell & \$14.38 (\$7.19 X2) \\
 				\hline
-				Nema 23 Stepper Motor Steel Mount Bracket w/ Screws - HobbyUnlimited & \$10.99 \\
+					Nema 23 Stepper Motor Steel Mount Bracket w/ Screws - HobbyUnlimited & \$10.99 \\
 				\hline
-				Dry Erase Whiteboard Block Eraser - Expo & \$8.90 \\
+					Dry Erase Whiteboard Block Eraser - Expo & \$8.90 \\
 				\hline
-				PCB for H Bridge (for Stepper Driver) and Stepper Motors, possible LCD screen & \ Unknown \\
+					PCB for H Bridge (for Stepper Driver) and Stepper Motors, possible LCD screen & \ Unknown \\
 				\hline
-				Various Wires and Connection Cables & \ Unknown \\
+					Various Wires and Connection Cables & \ Unknown \\
 				\hline 
-				\textbf{Total Rough Budget} & \ \textbf{\$573.86} \\
+					\textbf{Total Rough Budget} & \ \textbf{\$573.86} \\
 				\hline 
 		\end{tabular} }
 		\caption{Estimated costs of components for project}
@@ -96,6 +97,82 @@
 	
 	\section{Project Schedule}
 	\setlength{\parindent}{5ex}
+	\begin{table} [H]	
+		\centering
+		\resizebox{18cm}{!}{
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\textbf{Member Assignment} & \textbf{Task} & \textbf{Description} \\
+				\hline
+					All & A & Complete Smart Eraser Project Proposal to be submitted to DPS Telecom for review. \\
+				\hline
+					All & B & Finalize the specifics of the budget. \\
+				\hline
+					All & C & 
+					Create the Project Charter rough draft to be turned in.\\
+				\hline
+					All & D & Draft a more detailed blueprint of the physical Smart Eraser deliverable. \\
+				\hline
+					All & E & 
+					Revise the Project Description; complete for future reference.\\
+				\hline
+					All & F & 
+					Draft the flowchart to show the logical relationships between all connected devices within the project.\\
+				\hline
+					All & G & 
+					Complete bi-monthly update presentation for Senior Design class.\\
+				\hline
+					Juan C. & H & 
+					Complete a block diagram detailing the specific connections between the devices within the project.\\
+				\hline
+					Chris Q. & I & 
+					Research communication and protocols to be used.\\
+				\hline
+					Heather L. & J & 
+					Research the camera and how it will send data through the ethernet cord.\\
+				\hline
+					All & K & 
+					Complete bi-monthly update presentation for Senior Design class.\\
+				\hline
+					Heather L. & L & 
+					Research the microcontroller to be used  (DE1-SoC).\\
+				\hline
+					Chris Q. & M & 
+					Research the image processing program and what programming language to use to best suit the project{\rq}s needs.\\
+				\hline
+					Juan C. & N &
+					Research the mechanical system and the power connection it requires. \\
+				\hline
+		\end{tabular} }
+	\end{table}
+		\begin{table} [H]	
+		\centering
+		\resizebox{18cm}{!}{
+			\begin{tabular}{|c|c|c|}
+				\hline
+				\textbf{Member Assignment} & \textbf{Task} & \textbf{Description} \\
+				\hline
+					All & O & Complete bi-monthly update presentation for Senior Design class.\\
+				\hline
+					Chris Q. & P & Test the microcontroller after researching the ports needed for the project.\\
+				\hline
+					Heather L. & Q & Test the microcontroller after researching the ports needed for the project.\\
+				\hline
+					Heather L. & R & Research the coordinate system that will be used to convert pixels in an image to movements within the mechanical system.\\
+				\hline
+					All & S & 
+					Complete bi-monthly update presentation for Senior Design class.\\
+				\hline
+					All & T & 
+					Complete the final draft of the Project Charter.\\
+				\hline
+					All & U & 
+					Present Project Charter to Senior Design class, professor, and academic advisor.\\
+				\hline
+		\end{tabular} }
+		\caption{Estimated costs of components for project}
+		\label{table:2}
+	\end{table}	
 	
 	\section{Lab and Other Resources Needed}
 	\setlength{\parindent}{5ex}	
