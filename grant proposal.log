@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.9.26)  18 OCT 2018 19:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.9.26)  18 OCT 2018 19:58
 entering extended mode
 **"./grant proposal.tex"
 ("grant proposal.tex"
@@ -345,27 +345,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5.5> on input line 42.
  [1{C:/Users/thees/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
@@ -381,42 +381,52 @@ Overfull \hbox (13.9471pt too wide) in paragraph at lines 61--97
  []
 
 [2]
-Overfull \hbox (13.95088pt too wide) in paragraph at lines 105--150
+Overfull \hbox (13.9523pt too wide) in paragraph at lines 105--150
  [][] 
  []
 
 
-Overfull \hbox (13.96556pt too wide) in paragraph at lines 153--176
+Overfull \hbox (13.96783pt too wide) in paragraph at lines 153--176
  [][] 
  []
 
-[3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 195--200
+[3]
+Overfull \hbox (13.9592pt too wide) in paragraph at lines 183--219
+ [][] 
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 238--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 238--243
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 203.
-
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+(Font)              <7> on input line 246.
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-[5] ("grant proposal.aux") ) 
+[6] ("grant proposal.aux") ) 
 Here is how much of TeX's memory you used:
- 4452 strings out of 493312
- 71049 string characters out of 3138899
- 148259 words of memory out of 3000000
- 7959 multiletter control sequences out of 15000+200000
+ 4453 strings out of 493312
+ 71058 string characters out of 3138899
+ 148267 words of memory out of 3000000
+ 7960 multiletter control sequences out of 15000+200000
  107538 words of font info for 112 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,8n,39p,1147b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,8n,39p,1148b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8
 r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on "grant proposal.pdf" (5 pages, 48046 bytes).
+Output written on "grant proposal.pdf" (6 pages, 50015 bytes).
 PDF statistics:
- 27 PDF objects out of 1000 (max. 8388607)
+ 30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
